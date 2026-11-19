@@ -1,0 +1,10 @@
+/* @import "not-real.css"; — inside a comment, not a real import. */
+.icon::before {
+  content: "@import";
+}
+
+/* A word that only starts with @import is not an import. */
+@imported "fake.css";
+a {
+  color: red;
+}

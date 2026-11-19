@@ -1,0 +1,10 @@
+/* Two @import lines that make the browser fetch stylesheets
+   one after another instead of together. */
+@import url("base.css");
+body {
+  margin: 0;
+}
+@import "theme.css";
+h1 {
+  font-size: 2rem;
+}

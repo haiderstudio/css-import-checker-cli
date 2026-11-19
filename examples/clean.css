@@ -1,0 +1,24 @@
+/* A stylesheet with no @import — every rule does something,
+   and the page loads its stylesheets with <link> tags. */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* A comment between rules is fine, and so is a comment
+   inside a rule that still has real declarations. */
+.card {
+  /* the border was added last week */
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 0.5rem;
+  }
+}
